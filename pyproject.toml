@@ -13,7 +13,7 @@ authors = [
 dependencies = []
 requires-python = ">=3.8"
 readme = "README.md"
-license = {text = "MIT"}
+license = "MIT"
 
 [project.urls]
 Homepage = "https://github.com/roy-ht/editdistance"
