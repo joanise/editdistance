@@ -34,10 +34,10 @@ jobs:
       - name: Build wheels
         run: python -m cibuildwheel --output-dir wheelhouse
         env:
-          CIBW_SKIP: "cp27-* *p38-*"
+          CIBW_SKIP: "*p38-*"
           CIBW_TEST_REQUIRES: pytest
           CIBW_TEST_COMMAND: "pytest {project}/test"
-          CIBW_ARCHS_MACOS: "universal2 arm64"
+          CIBW_ARCHS_MACOS: "universal2"
           CIBW_ARCHS_LINUX: "auto aarch64"
       - name: Show built files
         shell: bash
